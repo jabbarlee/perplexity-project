@@ -1,5 +1,14 @@
+'use client'
+
+import Link from "next/link";
+
 export default function Home() {
   
+  const handleChange = (event: any) => {
+    event.target.style.height = 'auto';
+    event.target.style.height = event.target.scrollHeight + 'px';
+  };
+
   return(
     <div className="home-page-wrapper">
       <div>
@@ -7,8 +16,18 @@ export default function Home() {
       </div>
       <div className="prompt-field-wrapper"> 
         <div className="wrap-input">
-          <textarea placeholder="Enter text..." />
-          <button>Submit</button>
+          <div>
+            <textarea 
+              placeholder="Enter text..." 
+              onChange={(event) => handleChange(event)}
+              className="prompt-textarea"
+            />
+          </div>
+          <div>
+            <Link href='/search'>
+              <button>Submit</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
