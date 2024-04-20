@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <div>
             <Link href='/search'>
-              <button>Submit</button>
+              <button className="buttons">Submit</button>
             </Link>
           </div>
         </div>
