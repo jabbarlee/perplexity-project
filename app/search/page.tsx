@@ -1,4 +1,5 @@
 import React from 'react'
+import SourceCard from '../components/SourceCard'
 
 const page = () => {
   return (
@@ -6,6 +7,7 @@ const page = () => {
       <div className="search-page-content">
         <p className='prompt-title'>Humane AI Pin</p>
         <p>This is a sample test for styling purposes.</p>
+        <SourceCard/>
       </div>
     </div>
   )
