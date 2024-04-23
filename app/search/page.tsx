@@ -7,7 +7,7 @@ const page = () => {
       <div className="search-page-content">
         <p className='prompt-title'>Humane AI Pin</p>
         <p>This is a sample test for styling purposes.</p>
-        <SourceCard/>
+        <SourceCard title='Is the Humane AI Pin the next big thing?' link='youtube.com'/>
       </div>
     </div>
   )

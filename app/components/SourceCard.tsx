@@ -1,15 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 
-const SourceCard = () => {
+const SourceCard = ({
+    title,
+    link,
+}: {
+    title: string;
+    link: string;
+}) => {
   return (
-    <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        padding: '3px',
-    }}>
-      <p>Is the Humane AI Pin the next big thing?</p>
-      <Link href='www.youtube.com'><p>youtube</p></Link>
+    <div className='source-card'>
+      <p>{title}</p>
+      <Link href={link} className='source-card-link'>
+        <p>youtube</p>
+      </Link>
     </div>
   )
 }
