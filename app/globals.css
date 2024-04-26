@@ -258,3 +258,11 @@ body{
   color: #20808d;
   cursor: pointer;
 }
+
+/* NEW PROMPT FIELD */
+.new-prompt-field-wrapper{
+  background-color: #f3f3ee;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50px;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import SourceCard from '../components/SourceCard'
 import RelatedCard from '../components/RelatedCard'
+import PromptField from '../components/PromptField'
 
 const page = () => {
   return (
@@ -10,7 +11,8 @@ const page = () => {
         <p>This is a sample test for styling purposes.</p>
         <SourceCard title='Is the Humane AI Pin the next big thing?' link='youtube.com'/>
         <RelatedCard/>   
-        <RelatedCard/>   
+        <RelatedCard/>
+        <PromptField/>
       </div>
     </div>
   )
