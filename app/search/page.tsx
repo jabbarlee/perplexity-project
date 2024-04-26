@@ -10,6 +10,7 @@ const page = () => {
         <p>This is a sample test for styling purposes.</p>
         <SourceCard title='Is the Humane AI Pin the next big thing?' link='youtube.com'/>
         <RelatedCard/>   
+        <RelatedCard/>   
       </div>
     </div>
   )
