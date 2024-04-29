@@ -152,11 +152,10 @@ body{
 }
 
 .prompt-textarea{
-  min-height: 50px;
   max-height: 400px;
   width: 100%;
   border: none;
-  background-color: #fcfcf9;
+  background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   padding: 5px;
@@ -185,7 +184,7 @@ body{
 /* SEARCH PAGE */
 .search-page-wrapper {
   position: relative; /* This ensures the parent div acts as a positioning context */
-  width: 100%;
+  width: 800px;
   height: 100%;
   padding: 10px; /* Optional padding for the wrapper */
   background-color: #fcfcf9; /* Background color for the wrapper */
@@ -262,7 +261,51 @@ body{
 /* NEW PROMPT FIELD */
 .new-prompt-field-wrapper{
   background-color: #f3f3ee;
-  width: fit-content;
-  padding: 20px;
+  padding: 10px;
+  border-radius: 60px;
+}
+.new-prompt-wrapper{
+  background-color: white;
+  border: 1px solid #d8d7d7;
+  padding: 10px;
   border-radius: 50px;
+}
+.new-prompt {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space the buttons and textarea */
+}
+
+.prompt-input{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.attach-button{
+  border: none;
+  font-size: 25px;
+  text-align: center;
+  background-color: white;
+  color: #777777;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.attach-button:hover{
+  color: #555555;
+}
+.send-button{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #20808d;
+  background-color: #20808d;
+  color: white;
+  border-radius: 25px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.send-button:hover{
+  background-color: #143a41;
+  border: 1px solid #143a41;
 }
